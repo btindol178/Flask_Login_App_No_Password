@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container">
+    <h1>Registered Users</h1>
+      {% for user in users %}
+        <ul id="user.username">
+          <li>
+              <span class="field-name font-weight-bold text-uppercase">User:</span>
+              <span class="field-value">{{ user.user }}</span>
+          </li>
+        </ul>
+      {% endfor %}
+    </div>
+{% endblock %}
